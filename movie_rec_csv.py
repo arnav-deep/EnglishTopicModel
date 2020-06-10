@@ -33,7 +33,7 @@ for i in range(len(titles)):
     df_rec = pd.DataFrame({"rec": [df_title['title'][0:50]]})
     df_ind_res = pd.merge(df_curr, df_rec, left_index=True, right_index=True, how='inner')
     df_res = df_res.append(df_ind_res, ignore_index=True)
-    if i == 3:  # remove this or change this as requirement | Here i is number of movies in CSV
+    if i == 100:  # remove this or change this as requirement | Here i is number of movies in CSV
         break
 
 df_res.to_csv('movie_recommendation_100.csv', index=False)
