@@ -12,10 +12,10 @@ For the model, Wikipedia dump has been used as the Dataset, which has over 4 mil
 
 ### Requirements
 Written in [requirements.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/requirements.txt).
-
 ```python
 pip install -r requirements.txt
 ```
+
 ### Preprocessing Dataset and making gensim corpus
 The code for the same is written in [create_wiki_corpus.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/create_wiki_corpus.py).<br>
 Note: This process will take around 10 hours to complete. Output file is of size 34.6 GB, so it's not uploaded.
@@ -38,6 +38,10 @@ python load_model.py
 
 ### Dataset
 The dataset used is taken from Kaggle and can be found [here](https://www.kaggle.com/jrobischon/wikipedia-movie-plots).
+
+### Preprocess dataset
+The dataset is required to be preprocessed. This is done through the python script present [here](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
+Probabilty distribution value between two plots can be found using Jensen Shannon Divergence.
 
 ### Method to get recommendations
 I have created two different methods to get recommendations. The CSV method is computationaly very heavy, so that's not recommended unless being used for production.
