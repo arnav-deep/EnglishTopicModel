@@ -43,8 +43,9 @@ python load_model.py
 The dataset used is taken from Kaggle and can be found [here](https://www.kaggle.com/jrobischon/wikipedia-movie-plots).
 
 ### Preprocess dataset
-The dataset is required to be preprocessed. This is done through the python script present [here](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
-Probabilty distribution value between two plots can be found using Jensen Shannon Divergence.
+The dataset is required to be preprocessed. This is done through the python script present [movie_lda_bow](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
+Probabilty distribution value between two plots can be found using Jensen Shannon Divergence.<br>
+Output of the model is stored in [model_ldabow.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/model_ldabow.py)
 
 ### Method to get recommendations
 I have created two different methods to get recommendations. The CSV method is computationaly very heavy, so that's not recommended unless being used for production.
