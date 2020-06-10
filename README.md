@@ -30,13 +30,18 @@ The code for checking what the topics inside the model are can be found in load_
 Run the code to see the topics. The topics have a number id. It can be seen that the words in the topics have similaritites among them.<br>
 Model can be improved by tweaking the number of topics as per requirement.
 
+```python
+python load_model.py
+```
+
 ## Movie Recommendation
 
 ### Dataset
 The dataset used can be found [here](https://www.kaggle.com/jrobischon/wikipedia-movie-plots).
 
 ### Creating recommendations
-Model takes words as input. Each word of an input data must be fed. The code can be found in movie_rec.py. This outputs a CSV with movie title and its top 50 recommendations in order.
+Model takes words as input. Each word of an input data must be fed. The code can be found in movie_rec.py. This outputs a CSV with movie title and its top 50 recommendations in order.<br>
+Note: Takes around 30 minutes to run. Running it is not necessary as the output movie_recommendations.csv is already uploaded.
 
 ### Runnning recommendations
 The python script, get_rec.py has been written to get recommendations from this csv. It can be run and tested by giving movie tiltes present in the dataset as input.<br>
