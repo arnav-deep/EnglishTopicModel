@@ -8,7 +8,7 @@ Contact for queries: +91-9408597449, 2017316@iiitdmj.ac.in - Arnav Deep<br>
 A Topic Modelling model is created using LDA from gensim library.
 
 ### Dataset
-For the model, Wikipedia dump has been used as the Dataset, which has over 4 million articles in English. The Database can be found [here](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2). The data is of 15.9 GB.
+For the model, Wikipedia dump has been used as the Dataset, which has over 4 million articles in English. The dataset can be found [here](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2). The data is of 15.9 GB.
 
 ### Requirements
 Written in requirements.txt.
