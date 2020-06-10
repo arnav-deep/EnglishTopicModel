@@ -23,7 +23,7 @@ Note: This process will take around 10 hours to complete. Output file is of size
 ### Training the Model
 The code to train the model is written in the script [train_lda_model.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/train_lda_model.py).<br>
 The model has been trained via unsupervised learning on the complete articles of all Wikipedia English. The number of topics trained on model is 130.<br>
-Note: This process will take 6 hours to complete. The model files have already been saved in the 'Models' folder.
+Note: This process will take 6 hours to complete. The model files have already been saved [here](https://github.com/arnav-deep/RecommendationLDA/tree/master/Models) in the 'Models' folder.
 
 ### Checking the model
 The code for checking what the topics inside the model are can be found in [load_model.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/load_model.py).<br>
