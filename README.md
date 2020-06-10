@@ -60,7 +60,7 @@ Instructions to use the script can be found in the terminal when script is run.
 
 #### Save it to CSV
 Model takes words as input. Each word of an input data must be fed. The code can be found in [movie_rec_csv.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec_csv.py). This outputs a CSV with movie title and its top 50 recommendations in order.<br>
-Note: This will take around 27 hours for 1000 movies, since our movie dataset contains over 35,000 movies. Dataset must be downloaded before running this script, although running it is not necessary. The output CSV after running for 100 movies is [movie_recommendation_100.csv](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_recommendation_100.csv).
+Note: This will take around 27 hours for 1000 movies, since our movie dataset contains over 35,000 movies. Dataset must be downloaded before running this script, although running it is not necessary. The output CSV after running this script for i=3 movies is [movie_recommendation.csv](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_recommendation.csv).
 
 ## What more can be done
 1. Any other Dataset can be taken, just like the movie dataset is taken and used to get recommendations.<br>
