@@ -29,7 +29,7 @@ The model has been trained via unsupervised learning on the complete articles of
 Note: This process will take 6 hours to complete. The model files have already been saved [here](https://github.com/arnav-deep/RecommendationLDA/tree/master/Models) in the 'Models' folder.
 
 ### Checking the model
-The code for checking what the topics inside the model are can be found in [load_model.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/load_model.py).<br>
+The code for checking what the topics inside the model are can be found in [show_model_topics.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/show_model_topics.py).<br>
 Run the code to see the topics. The topics have a number id. It can be seen that the words in the topics have similaritites among them.<br>
 Model can be improved by tweaking the number of topics as per requirement.
 
