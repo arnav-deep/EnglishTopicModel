@@ -8,7 +8,7 @@ Contact for queries: +91-9408597449, 2017316@iiitdmj.ac.in - Arnav Deep<br>
 A Topic Modelling model is created using LDA from gensim library.
 
 ### Dataset
-For the model, Wikipedia dump has been used as the Dataset, which has over 4 million articles in English. The dataset can be found [here](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2). The data is of 15.9 GB.
+For the model, Wikipedia dump has been used as the Dataset, which has over 4 million articles in English. The dataset can be found [here](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2). The data is of 16.2 GB.
 
 ### Requirements
 Written in [requirements.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/requirements.txt).
@@ -41,7 +41,7 @@ The dataset used is taken from Kaggle and can be found [here](https://www.kaggle
 
 ### Creating recommendations
 Model takes words as input. Each word of an input data must be fed. The code can be found in [movie_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec.py). This outputs a CSV with movie title and its top 50 recommendations in order.<br>
-Note: Takes around 30 minutes to run. Dataset must be downloaded before running this script, although running it is not necessary as the output [movie_recommendations.csv](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_recommendations.csv) is already uploaded.
+Note: Takes around 30 minutes to run. Dataset must be downloaded before running this script, although running it is not necessary as the output [movie_recommendation.csv](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_recommendation.csv) is already uploaded.
 
 ### Runnning recommendations
 The python script, [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/get_rec.py) has been written to get recommendations from this csv. It can be run and tested by giving movie tiltes present in the dataset as input.<br>
