@@ -48,6 +48,7 @@ Note: You can get the movies present in the dataset from [movie_titles.txt](http
 ```python
 python get_rec.py
 ```
+Instructions to use the script can be found in the terminal when script is run.
 
 #### Save it to CSV
 Model takes words as input. Each word of an input data must be fed. The code can be found in [movie_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec.py). This outputs a CSV with movie title and its top 50 recommendations in order.<br>
@@ -57,4 +58,6 @@ Note: This will take around 27 hours for 1000 movies, since our movie dataset co
 1. Any other Dataset can be taken, just like the movie dataset is taken and used to get recommendations.<br>
 The procedure will be very simple and the steps to be followed will be the same as that of this movie recommendation.<br>
 
-2. A movie plot in the form of a string can be input in get_rec.py and the model can be run on it to get recommendations from the data.
+2. A movie plot in the form of a string can be input in get_rec.py and the model can be run on it to get recommendations from the data.<br>
+
+3. A website can be based using this model, but using the CSV method will be better and give fast results.
