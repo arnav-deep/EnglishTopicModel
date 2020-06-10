@@ -52,4 +52,4 @@ Note: You can get the movies present in the dataset from movie_titles.txt.
 1. Any other Dataset can be taken, just like the movie dataset is taken and used to get recommendations.<br>
 The procedure will be very simple and the steps to be followed will be the same as that of this movie recommendation.<br>
 
-2. A Plot can be input in get_rec.py and the model can be run on it to get recommendations from the data.
+2. A movie plot in the form of a string can be input in get_rec.py and the model can be run on it to get recommendations from the data.
