@@ -29,7 +29,7 @@ The model has been trained via unsupervised learning on the complete articles of
 Note: This process will take 6 hours to complete. The model files have already been saved [here](https://github.com/arnav-deep/RecommendationLDA/tree/master/Models) in the 'Models' folder.
 
 ### Checking the model
-The code for checking what the topics inside the model are can be found in [load_model.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/load_model.py).<br>
+The code for checking what the topics inside the model are can be found in [show_model_topics.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/show_model_topics.py).<br>
 Run the code to see the topics. The topics have a number id. It can be seen that the words in the topics have similaritites among them.<br>
 Model can be improved by tweaking the number of topics as per requirement.
 
@@ -43,8 +43,9 @@ python load_model.py
 The dataset used is taken from Kaggle and can be found [here](https://www.kaggle.com/jrobischon/wikipedia-movie-plots).
 
 ### Preprocess dataset
-The dataset is required to be preprocessed. This is done through the python script present [here](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
-Probabilty distribution value between two plots can be found using Jensen Shannon Divergence.
+The dataset is required to be preprocessed. This is done through the python script present [movie_lda_bow](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
+Probabilty distribution value between two plots can be found using Jensen Shannon Divergence.<br>
+Output of the model is stored in [model_ldabow.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/model_ldabow.txt)
 
 ### Method to get recommendations
 I have created two different methods to get recommendations. The CSV method is computationaly very heavy, so that's not recommended unless being used for production.
@@ -58,8 +59,8 @@ python get_rec.py
 Instructions to use the script can be found in the terminal when script is run.
 
 #### Save it to CSV
-Model takes words as input. Each word of an input data must be fed. The code can be found in [movie_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec.py). This outputs a CSV with movie title and its top 50 recommendations in order.<br>
-Note: This will take around 27 hours for 1000 movies, since our movie dataset contains over 35,000 movies. Dataset must be downloaded before running this script, although running it is not necessary. The output for 100 movies are [here](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_recommendation_100.csv).
+Model takes words as input. Each word of an input data must be fed. The code can be found in [movie_rec_csv.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec_csv.py). This outputs a CSV with movie title and its top 50 recommendations in order.<br>
+Note: This will take around 27 hours for 1000 movies, since our movie dataset contains over 35,000 movies. Dataset must be downloaded before running this script, although running it is not necessary. The output CSV after running for 100 movies is [movie_recommendation_100.csv](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_recommendation_100.csv).
 
 ## What more can be done
 1. Any other Dataset can be taken, just like the movie dataset is taken and used to get recommendations.<br>
