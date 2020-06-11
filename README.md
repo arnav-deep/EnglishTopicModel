@@ -16,7 +16,7 @@ A model using of Topic Modelling using LDA is made by using the [gensim](https:/
 For the model, Wikipedia dump has been used as the Dataset, which has over 4 million articles in English. The dataset can be found [here](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2). The data is of 16.2 GB.
 
 ### Requirements
-Written in [requirements.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/requirements.txt).
+Written in [requirements.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/requirements.txt). Creating a virtual environment before this is recommended.
 ```python
 pip install -r requirements.txt
 ```
