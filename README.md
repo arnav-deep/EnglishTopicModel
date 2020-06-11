@@ -11,7 +11,7 @@ A Topic Modelling model is created using LDA from gensim library. LDA can be und
 Clone this repository on your laptop or download files by clicking [here](https://github.com/arnav-deep/RecommendationLDA/archive/master.zip)
 
 ## Making Basic Enlgish Model
-A model using of Topic Modelling using LDA is made by using the [gensim](https://pypi.org/project/gensim/) library.
+A Topic Modelling model using LDA is made by using the [gensim](https://pypi.org/project/gensim/) library.
 
 ### Dataset
 For the model, Wikipedia dump has been used as the Dataset, which has over 4 million articles in English. The dataset can be found [here](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2). The data is of 16.2 GB.
