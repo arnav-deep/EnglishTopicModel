@@ -1,7 +1,8 @@
 ML Project by Arnav Deep (2017316), Kaushal Sharma (2017324) and Shivam Dubey (2017349)
 
 For comfortable viewing, please read on my GitHub repository.<br>
-Open from this link: https://github.com/arnav-deep/RecommendationLDA<br>
+Open from this link: https://github.com/arnav-deep/RecommendationLDA
+
 Contact for queries: +91-9408597449, 2017316@iiitdmj.ac.in - Arnav Deep<br>
 
 # Recommendation System using LDA
