@@ -7,7 +7,7 @@ Contact for queries: +91-9408597449, 2017316@iiitdmj.ac.in - Arnav Deep<br>
 # Recommendation System using LDA
 A Topic Modelling model is created using LDA from gensim library. LDA can be understood from this [video](https://www.youtube.com/watch?v=3mHy4OSyRf0).
 
-Clone this repository on your laptop by downloading files by clicking [here](https://github.com/arnav-deep/RecommendationLDA/archive/master.zip)
+Clone this repository on your laptop or download files by clicking [here](https://github.com/arnav-deep/RecommendationLDA/archive/master.zip)
 
 ## Making Basic Enlgish Model
 A model using of Topic Modelling using LDA is made by using the [gensim](https://pypi.org/project/gensim/) library.
