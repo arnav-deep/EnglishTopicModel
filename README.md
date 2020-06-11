@@ -29,7 +29,7 @@ Note: This process will take around 10 hours to complete. Output file is of size
 ### Training the Model
 The code to train the model is written in the script [train_lda_model.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/train_lda_model.py).<br>
 The model has been trained via unsupervised learning on the complete articles of all Wikipedia English. The number of topics trained on model is 130.<br>
-Note: This process will take 6 hours to complete. The model files have already been saved [here](https://github.com/arnav-deep/RecommendationLDA/tree/master/Models) in the 'Models' folder.
+Note: This process will take around 6 hours to complete. The model files have already been saved here in the [Models](https://github.com/arnav-deep/RecommendationLDA/tree/master/Models) folder.
 
 ### Checking the model
 The code for checking what the topics inside the model are can be found in [show_model_topics.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/show_model_topics.py).<br>
@@ -41,20 +41,22 @@ python load_model.py
 ```
 
 ## Movie Recommendation
-Everything code related to Movie Recommendation can be found in [movie_rec](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec) folder
+Everything code related to Movie Recommendation can be found in [movie_rec](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec) folder.
 
 ### Dataset
 The dataset used is taken from Kaggle and can be found [here](https://www.kaggle.com/jrobischon/wikipedia-movie-plots).
 
 ### Preprocess dataset
-The dataset is required to be preprocessed. This is done through the python script present [movie_lda_bow](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
-Probabilty distribution value between two plots can be found using Jensen Shannon Divergence.<br>
+The dataset is required to be preprocessed. This is done through the python script present [movie_lda_bow](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_lda_bow.py). This outputs a gensim lda2bow which assigns every word in the dataset a probability distribution value of its topic.<br>
+Probabilty distribution value between two plots can be found using Jensen-Shannon Divergence.<br>
 Output of the model is stored in [model_ldabow.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_ldabow.txt)
 
 ### Method to get recommendations
 I have created two different methods to get recommendations. The CSV method is computationaly very heavy, so that's not recommended unless being used for production.
 
 #### Directly from terminal
+Video showing how this method can be found [here}(https://drive.google.com/open?id=1zKI9-WiZsM4FT4043dBx4PGDZ4NXI4As)
+
 The python script, [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/get_rec.py) has been written to get recommendations. It can be run and tested by giving movie tiltes present in the dataset as input.<br>
 Note: You can get the movies present in the dataset from [movie_titles.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_titles.txt) or you can run simply run [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/get_rec.py) and the terminal will help you get the movie titles.
 ```python
