@@ -20,7 +20,7 @@ df_res = pd.DataFrame({"title": [],
 df_title = pd.DataFrame({"title": [],
                          "dist": []})
 
-for i in range(34, len(titles)):
+for i in range(len(titles)):
     df_title.empty
     df_curr = pd.DataFrame({"title": [titles[i]]})
     start = time.time()
