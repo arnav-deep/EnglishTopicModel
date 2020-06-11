@@ -47,6 +47,7 @@ while True:
 
     if check == '1':
         num = random.randint(0, i - 25)
+        print("Getting recommendations. Please wait\n")
         df_curr = pd.DataFrame({"title" : [titles[num]]})
         for j in range(len(lda_bow)):
             if j != num:
@@ -74,6 +75,7 @@ while True:
     else:
         title = check
         if title in title_list:
+            print("Getting recommendations. Please wait\n")
             num = title_list.index(title)
             df_curr = pd.DataFrame({"title": [titles[num]]})
             for j in range(len(lda_bow)):
