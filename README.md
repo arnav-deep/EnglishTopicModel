@@ -38,29 +38,30 @@ python load_model.py
 ```
 
 ## Movie Recommendation
+Everything code related to Movie Recommendation can be found in [movie_rec](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec) folder
 
 ### Dataset
 The dataset used is taken from Kaggle and can be found [here](https://www.kaggle.com/jrobischon/wikipedia-movie-plots).
 
 ### Preprocess dataset
-The dataset is required to be preprocessed. This is done through the python script present [movie_lda_bow](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
+The dataset is required to be preprocessed. This is done through the python script present [movie_lda_bow](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_lda_bow.py). This outputs a gensim lda2bow which is assigns every word in the dataset a probability distribution value.<br>
 Probabilty distribution value between two plots can be found using Jensen Shannon Divergence.<br>
-Output of the model is stored in [model_ldabow.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/model_ldabow.txt)
+Output of the model is stored in [model_ldabow.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/model_ldabow.txt)
 
 ### Method to get recommendations
 I have created two different methods to get recommendations. The CSV method is computationaly very heavy, so that's not recommended unless being used for production.
 
 #### Directly from terminal
-The python script, [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/get_rec.py) has been written to get recommendations. It can be run and tested by giving movie tiltes present in the dataset as input.<br>
-Note: You can get the movies present in the dataset from [movie_titles.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_titles.txt) or you can run simply run [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/get_rec.py) and the terminal will help you get the movie titles.
+The python script, [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/get_rec.py) has been written to get recommendations. It can be run and tested by giving movie tiltes present in the dataset as input.<br>
+Note: You can get the movies present in the dataset from [movie_titles.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_titles.txt) or you can run simply run [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/get_rec.py) and the terminal will help you get the movie titles.
 ```python
 python get_rec.py
 ```
 Instructions to use the script can be found in the terminal when script is run.
 
 #### Save it to CSV
-Model takes words as input. Each word of an input data must be fed. The code can be found in [movie_rec_csv.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec_csv.py). This outputs a CSV with movie title and its top 50 recommendations in order.<br>
-Note: This will take around 27 hours for 1000 movies, since our movie dataset contains over 35,000 movies. Dataset must be downloaded before running this script, although running it is not necessary. The output CSV after running this script for i=3 movies is [movie_recommendation.csv](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_recommendation.csv).
+Model takes words as input. Each word of an input data must be fed. The code can be found in [movie_rec_csv.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_rec_csv.py). This outputs a CSV with movie title and its top 50 recommendations in order.<br>
+Note: This will take around 27 hours for 1000 movies, since our movie dataset contains over 35,000 movies. Dataset must be downloaded before running this script, although running it is not necessary. The output CSV after running this script for i=3 movies is [movie_recommendation.csv](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_recommendation.csv).
 
 ## What more can be done
 1. Any other Dataset can be taken, just like the movie dataset is taken and used to get recommendations.<br>
