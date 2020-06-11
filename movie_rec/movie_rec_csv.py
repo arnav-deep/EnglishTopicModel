@@ -7,7 +7,7 @@ from gensim.matutils import jensen_shannon
 
 np.seterr(divide='ignore', invalid='ignore')
 
-df_input = pd.read_csv('Datasets/wiki_movie_plots_deduped.csv')
+df_input = pd.read_csv('../Datasets/wiki_movie_plots_deduped.csv')
 
 titles = df_input.Title
 

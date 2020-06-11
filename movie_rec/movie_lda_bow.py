@@ -13,7 +13,7 @@ from gensim.parsing.preprocessing import remove_stopwords, preprocess_string, st
 
 np.seterr(divide='ignore', invalid='ignore')
 
-df_input = pd.read_csv('Datasets/wiki_movie_plots_deduped.csv')
+df_input = pd.read_csv('../Datasets/wiki_movie_plots_deduped.csv')
 
 titles = df_input.Title
 plots_raw = df_input.Plot
@@ -29,7 +29,7 @@ for plot in plots_raw:
     temp = preprocess_string(temp)
     plots.append(temp)
 
-model_location = datapath("D:/HazMat/Projects/ML/Models/model_130")
+model_location = datapath("D:/HazMat/Projects/ML/Models/model_130")  # add complete path here
 model = LdaModel.load(model_location)
 
 bow_plot = []
