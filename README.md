@@ -3,7 +3,7 @@ ML Project by Arnav Deep (2017316), Kaushal Sharma (2017324) and Shivam Dubey (2
 For comfortable viewing, please read on my GitHub repository.<br>
 Open from this link: https://github.com/arnav-deep/RecommendationLDA
 
-Contact for queries: +91-9408597449, 2017316@iiitdmj.ac.in - Arnav Deep<br>
+Contact for queries: arnavd4@gmail.com - Arnav Deep<br>
 
 # Recommendation System using LDA
 A Topic Modelling model is created using LDA from gensim library. LDA can be understood from this [youtube video](https://www.youtube.com/watch?v=3mHy4OSyRf0).
@@ -57,7 +57,7 @@ I have created two different methods to get recommendations.
 Note: The CSV method is computationaly very heavy, so that's not recommended unless being used for production. It takes around 27 hours for 1000 movies and our movie dataset contains over 35,000 movies.
 
 #### A. Directly from terminal
-Video showing how this method works can be found [here}(https://drive.google.com/open?id=1zKI9-WiZsM4FT4043dBx4PGDZ4NXI4As)
+Video showing how this method works can be found [here](https://drive.google.com/open?id=1zKI9-WiZsM4FT4043dBx4PGDZ4NXI4As)
 
 The python script, [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/get_rec.py) has been written to get recommendations. It can be run and tested by giving movie tiltes present in the dataset as input.<br>
 Note: You can get the movies present in the dataset from [movie_titles.txt](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/movie_titles.txt) or you can run simply run [get_rec.py](https://github.com/arnav-deep/RecommendationLDA/blob/master/movie_rec/get_rec.py) and the terminal will help you get the movie titles.
