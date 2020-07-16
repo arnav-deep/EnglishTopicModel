@@ -38,6 +38,6 @@ python load_model.py
 This will return list of topics the model has made.
 
 ## License
-GNU GENERAL PUBLIC LICENSE
+GNU GENERAL PUBLIC LICENSE Version 2
 
 Arnav Deep © June 2020. All rights reserved.
