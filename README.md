@@ -36,3 +36,8 @@ Model can be improved by tweaking the number of topics. This strictly depends on
 python load_model.py
 ```
 This will return list of topics the model has made.
+
+## License
+GNU GENERAL PUBLIC LICENSE
+
+Arnav Deep © June 2020. All rights reserved.
